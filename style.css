@@ -1,34 +1,80 @@
 
-body {font-weight: 900; position: relative;font-size: 30px;font-family: 'VT323', monospace; background-image: url("./Pictures/original.gif"); background-size:cover;background-attachment: fixed;background-repeat: no-repeat;text-align: center; background-color: black}
+body {font-weight: 900;
+    position: relative;
+    font-size: 30px; 
+    font-family: 'VT323', monospace;
+    background-image: url("./Pictures/original.gif"); 
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black}
 
-p{
-    word-spacing: 8px;
-}
-
-#main h1{font-family: 'VT323', monospace ;align-content: center; font-variant: small-caps;}
-
-img{
+/* Text Box */
+#Me{
+    position: relative;
+    top: 90px;
+    left: -450px;
     height: 250px;
     width: 200px;
+    z-index: 998;
 }
-.Nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#Image{
+text-align: center
+}
+
+p {
+    color:white;
+    position: relative;
+    height: auto;
+    text-align: right;
+}
+.txtB {
+    position: absolute;
+    top: 245px;
+    left: 300px;
+    height: 93px;
+    width: 480px;
+    border: black solid 2px;
+    background-color: rgba(50, 42, 168, 0.3);
+}
+.txtBN {
+    position: absolute;
+    top: 215px;
+    left: 330px;
+    height: 30px;
+    width: 90px;
+    border: black solid 2px;
+    background-color: rgba(50, 42, 168, 0.3);
+}
+.Name {
+    color:white;
+    position: absolute;
+    top: 0px;
+    text-align: right;
+}
+/* Type writer */
+#typeWriter {
     overflow: hidden;
-}
+    margin: 0 auto;
+    border-right: 1px solid transparent;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation:
+        typing 3.0s steps(40, end),
+        blink .75s step-end infinite;
+ }
+ @keyframes typing {
+    from {width: 0}
+    to{width: 100%}
+ }
+ @keyframes blink {
+    from, to {border-color: transparent}
+    50% {border-color: transparent}
+ }
+/*Type writer end*/
 
-.Nav li {
-    float: right ;
-}
 
-.Nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/* Txt Box End*/
 
 .Nav li a:hover {
     background-color: midnightblue;
@@ -69,11 +115,6 @@ a:visited{
     background-color: rgba(236, 236, 236, 0.747)
 }
 
-@font-face{
-    font-family: FirstFont;
-    src: url(../Portfolio/Fonts/Gaming.ttf)
-}
-
 .padding {
     padding: 10px;
 }
@@ -82,5 +123,8 @@ a:visited{
     border-radius: 5px;
 }
 
-
-
+#MeeClick {
+    position: relative;
+    top: -170px;
+    left: 30px;
+}
