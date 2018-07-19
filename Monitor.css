@@ -3,10 +3,109 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: royalblue;
+    font-weight: 900;
+    font-size: 27px; 
+    font-family: 'VT323', monospace;
+    max-width: 900px;
+    max-height: 1440px;
 }
 
+/* Text Box */
+#Me{
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    height: 250px;
+    width: 200px;
+    z-index: 9999;
+}
+#Image{
+text-align: center
+}
+#Image2{
+    text-align: center
+    }
+p {
+    color:white;
+    position: relative;
+    height: auto;
+    text-align: right;
+}
+.txtB {
+    position: absolute;
+    bottom: 0px;
+    left: 320px;
+    height: 93px;
+    width: 530px;
+    border: black solid 2px;
+    background-color: rgba(50, 42, 168, 0.7);
+    z-index: 999;
+}
+.txtBN {
+    position: absolute;
+    bottom: 95px;
+    left: 360px;
+    height: 30px;
+    width: 90px;
+    border: black solid 2px;
+    background-color: rgba(50, 42, 168, 0.7);
+    z-index: 999;
+}
+.Name {
+    color:white;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+/* Type writer */
+#typeWriter {
+    overflow: hidden;
+    margin: 0 auto;
+    border-right: 1px solid transparent;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation:
+        typing 3.0s steps(40, end),
+        blink .75s step-end infinite;
+ }
+ @keyframes typing {
+    from {width: 0}
+    to{width: 100%}
+ }
+ @keyframes blink {
+    from, to {border-color: transparent}
+    50% {border-color: transparent}
+ }
+/*Type writer end*/
+
+
+/* Txt Box End*/
+
+
 #Taskbar{
-        position: relative;
-        top: 600px;
-        background-color: rgba(236, 236, 236, 0.747);  
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 40px;
+        width: 100%;
+        background-color: rgba(236, 236, 236, 0.9);  
+}
+#Time{
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+}
+#Hub{
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+    z-index: 999;
+    border-left:4px;
+}
+
+#App{
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
 }

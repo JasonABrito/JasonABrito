@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
         <link rel="stylesheet" href="Monitor.css">
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
   <head>
     <link rel="icon" type="Image/png" href="Logo.png"/>
-    <title>Document</title>
+    <title>Monitor</title>
     <script type="text/javascript" src="date_time.js"></script>
-
 </head>
 <body>
+    <button id="App"><img src="AboutmeExe.png" alt="About" height="50"><p>About Me.exe</p></button>
+    <br>
+    <button id="App"><img src="ProjectsExe.png" alt="Contact" height="50"><p>Projects.exe</p></button>
+    <br>
+    <button id="App"><img src="PhoneExe.png" alt="Contact" height="50"><p>Contact Me.exe</p></button>
 
-    <div id= "Taskbar"> 
-        
+
+        <div id="Image">
+                <img id="Me" src="./meo.png">
+            </div>
+            <div class="txtBN">
+                <p id="typeWriter" class="Name">Jason</p>
+            </div>
+            <div class="txtB">
+                <p id="typeWriter">Hello again, So this is my monitor screen.
+                    <br>Feel free to click on whatever, whether it
+                    <br> be the projects I've made or my about.exe. </p>
+            </div>
+        <button id="Hub"><img src="HubHD.png" alt="Hub Clear" align="left"></button>
+<div id="Taskbar"> 
+    <div id="Time">
+    <span id="date_time"></span>
+    <script type="text/javascript">
+        window.onload = date_time('date_time');
+    </script>
     </div>
-    
-        <span id="date_time"></span>
-        <script type="text/javascript">
-            window.onload = date_time('date_time');
-        </script>
+  </div>
+  <script src="Monitor.js"></script>
 </body>
 </html>
