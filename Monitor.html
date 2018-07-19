@@ -7,15 +7,45 @@
     <link rel="icon" type="Image/png" href="Logo.png"/>
     <title>Monitor</title>
     <script type="text/javascript" src="date_time.js"></script>
+       
 </head>
 <body>
-    <button id="App"><img src="AboutmeExe.png" alt="About" height="50"><p>About Me.exe</p></button>
+  
+    <button id="App" onclick="aboutPop()"><img src="AboutmeExe.png" alt="About" height="50"><p>About Me.exe</p></button>
     <br>
-    <button id="App"><img src="ProjectsExe.png" alt="Contact" height="50"><p>Projects.exe</p></button>
+    <button id="App" onclick="projectPop()"><img src="ProjectsExe.png" alt="Projects" height="50"><p>Projects.exe</p></button>
     <br>
-    <button id="App"><img src="PhoneExe.png" alt="Contact" height="50"><p>Contact Me.exe</p></button>
+    <button id="App" onclick="contactPop()"><img src="PhoneExe.png" alt="Contact" height="50"><p>Contact Me.exe</p></button>
+      
+    <div id="BrowserA" class="hidden">
+            <p id="IdA">About me</p>
+        <button id="X" onclick="aboutPop()">
+            <img src="media.png" alt="X" height="15" align=center>
+        </button>
+            <div id="AboutExe">
+                <p id="abt"></p>
+            </div>
+        </div>
 
-
+        <div id="BrowserB">
+                <p id="IdB">Projects</p>
+            <button id="X" onclick="projectPop()">
+                <img src="media.png" alt="X" height="15" align=center>
+            </button>
+            <div id="ProjectsExe">
+                <p id="prj"></p>
+            </div>
+            </div>
+            <div id="BrowserC">
+                    <p id="IdC">Contact Me</p>
+                <button id="X" onclick="contactPop()">
+                    <img src="media.png" alt="X" height="15" align=center>
+                </button>
+                <div id="PhoneExe"></div>
+                <p id="cnt"></p>
+                </div>
+                </div>
+        
         <div id="Image">
                 <img id="Me" src="./meo.png">
             </div>
@@ -36,6 +66,35 @@
     </script>
     </div>
   </div>
-  <script src="Monitor.js"></script>
+    <script>
+function aboutPop() {
+    var x = document.getElementById("BrowserA");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    document.getElementById("abt BrowserA").innerHTML = "Hello";
+}
+function projectPop() {
+    var x = document.getElementById("BrowserB");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    document.getElementById("abt BrowserB").innerHTML = "Hello";
+}
+function contactPop() {
+    var x = document.getElementById("BrowserC");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    document.getElementById("abt BrowserC").innerHTML = "Hello";
+}
+
+</script>
 </body>
 </html>

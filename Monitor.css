@@ -109,3 +109,65 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+#BrowserA {
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    height: 500px;
+    width: 800px;
+    background-color: silver;
+    border: rgba(236, 236, 236) solid 6px;
+    border-top: rgba(236, 236, 236) solid 30px;
+}
+
+#abt{
+color: black
+}
+
+#X{
+    position: absolute;
+    left: 770px;
+    top: -27px;
+    background-color: red;
+    color: red;
+}
+.hidden{
+    display: none;
+}
+#IdA {
+    position: absolute;
+    top: -57px;
+    color: black;
+}
+#BrowserB {
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    height: 500px;
+    width: 800px;
+    background-color: silver;
+    border: rgba(236, 236, 236) solid 6px;
+    border-top: rgba(236, 236, 236) solid 30px;
+}
+#IdB {
+    position: absolute;
+    top: -57px;
+    color: black;
+}
+#BrowserC {
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    height: 500px;
+    width: 800px;
+    background-color: silver;
+    border: rgba(236, 236, 236) solid 6px;
+    border-top: rgba(236, 236, 236) solid 30px;
+}
+#IdC {
+    position: absolute;
+    top: -57px;
+    color: black;
+}
+
