@@ -259,3 +259,18 @@ p {
     top: 80px;
     text-align: center;
 }
+#TicTacExe{
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    left: 300px;
+}
+#IconTxt{
+    position: absolute;
+    left:30px;
+}
+
+#LinkI{
+    display: flex;
+flex-direction: column;
+}

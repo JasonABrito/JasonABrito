@@ -1,0 +1,37 @@
+#conBoard td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: white;
+}
+
+
+
+#conBoard table {
+    border: 3px solid black;
+    background: linear-gradient(blue, blue, blue, blue, blue, blue, blue, blue, yellow);
+    border-radius: 10px;
+    position: relative;
+    left: 250px;
+    top: -260px;
+}
+
+#conBoard .checker {
+    border-radius: 50%;
+}
+
+#conBoard .red {
+    background-color: red;
+    color:red
+}
+
+#conBoard  .black {
+    background-color: black;
+    color: black
+
+}
