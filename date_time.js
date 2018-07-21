@@ -1,4 +1,4 @@
-function date_time(id) {
+function dateTime(id) {
         date = new Date;
         year = date.getFullYear();
         month = date.getMonth();
@@ -20,6 +20,6 @@ function date_time(id) {
         }
         result = '| ' + days[day] + ' |' + months[month] + ' ' + d + ', ' + year + ' | ' + h + ':' + m + ':' + s;
         document.getElementById(id).innerHTML = result;
-        setTimeout('date_time("' + id + '");', '1000');
+        setTimeout('dateTime("' + id + '");', '1000');
         return true;
 }
